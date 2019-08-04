@@ -1,0 +1,31 @@
+.contacts {
+  font-family: $font-base;
+  font-size: 18px;
+  line-height: 27px;
+  color: $text__color--white;
+}
+
+.contacts__title {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+.contacts__text {
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__phone-mobile {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__phone {
+  font-family: $font-base;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+  color: $text__color--white;
+}

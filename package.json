@@ -1,0 +1,68 @@
+{
+  "name": "barbershopborodinski",
+  "version": "1.0.0",
+  "description": "tutorial project Barbershop Borodinski",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "picturefill": "^3.0.3",
+    "standart": "^6.1.0",
+    "svg4everybody": "^2.1.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "cross-env": "^5.2.0",
+    "css-mqpacker": "^7.0.0",
+    "del": "^5.0.0",
+    "eslint": "^6.1.0",
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-changed": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-lintspaces": "^1.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-wait": "0.0.2",
+    "gulp-zip": "^5.0.0",
+    "husky": "^3.0.1",
+    "imagemin-jpegoptim": "^6.0.0",
+    "imagemin-webp": "^5.1.0",
+    "require-dir": "^1.2.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "deploy": "npm run build && gh-pages -d build",
+    "dist": "npm run build && gulp zip",
+    "lintspaces": "gulp lintspaces",
+    "stylelint": "stylelint \"source/styles/**/*.scss\" --syntax sass",
+    "eslint": "eslint \"source/js/**/*.js\"",
+    "test": "npm run lintspaces && npm run stylelint && npm run eslint"
+  },
+  "author": "Dmitry Alexandrov <dmitryspbalexandrov@gmail.com>",
+  "license": "ISC"
+}

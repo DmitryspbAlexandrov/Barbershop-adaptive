@@ -1,0 +1,41 @@
+.stats {
+  font-family: $font-base;
+  background-color: #333333;
+}
+
+.stats__slogan {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: $text__color--black;
+}
+
+.stats__intro {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: 27px;
+  color: $text__color--black;
+}
+
+.stats__legend {
+  font-size: 20px;
+  line-height: 27px;
+  color: $text-color--lightgrey;
+}
+
+.stats__list {
+  color: $text__color--white;
+}
+
+.stats__value {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.stats__field {
+  font-size: 18px;
+  line-height: 18px;
+}

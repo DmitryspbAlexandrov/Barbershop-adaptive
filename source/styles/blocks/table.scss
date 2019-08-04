@@ -1,0 +1,17 @@
+.table__item {
+  font-family: $font-base;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.table__service {
+  font-weight: bold;
+}
+
+.table__subitem {
+  font-weight: normal;
+}
+
+.table__item--large {
+  display: none;
+}

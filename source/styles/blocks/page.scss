@@ -1,0 +1,33 @@
+.page {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__logo {
+  display: block;
+  width: 226px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: $main-bg__color--gray;
+}
+
+.page-main {
+margin: 0;
+padding: 0;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background-color: $footer-bg__color;
+}

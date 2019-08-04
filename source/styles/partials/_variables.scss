@@ -1,0 +1,79 @@
+//screen width
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desctop-width: 1200px;
+
+//fonts
+$font-base: "PT Sans Narrow", "Arial", sans-serif;
+$font-size-base: 18px;
+$line-height-base: 27px;
+
+//colors
+//mobile
+//menu
+$m-nav-text__color--active: #978374;
+$m--nav-bg__color: #826550;
+$m-nav-bg__color--hover: #755a46;
+$m-nav-bg__color--active: #6a4d38;
+
+//tablet
+//menu
+$t-nav-text__color--hover: #000000;
+$t-nav-text__color--active: #b2b2b2;
+$t-nav-icon__color: #4d4d4d;
+$t-nav-icon__color--hover: #b2b2b2;
+$t-nav-icon__color--active: #e5e5e5;
+$t-nav-bg__color: #000000;
+$t-nav-bg__color--hover: #ffffff;
+
+//desctop
+//menu
+$d-nav-text__color--hover: #826550;
+$d-nav-text__color--active: #4d4d4d;
+
+//button
+//white button
+$button-border__color: #d5c9bd;
+$button-bg__color: #ffffff;
+$button-bg__color--hover: #d5c9bd;
+$button-text__color--hover: #958c84;
+
+//form button
+$button-bg__color: #826550;
+$button-bg__color--hover: #6a4d38;
+$button-bg__color--disabled: #aeaeae;
+$btton-text__color--active: #978374;
+
+//main
+$main-bg__color: #f8f5f2;
+$main-bg__color--gray: #242424;
+$text__color--white: #ffffff;
+$text__color--black: #000000;
+$text-color--lightgrey: #666666;
+$icon__color: #826550;
+
+$nav-bg__color: #826550;
+
+$stats-bg__color: #ffffff;
+
+$advantages-bg__color: #242424;
+$advantages-text__color: #f7f4f1;
+$news-bg__color: #f8f5f2;
+
+$news-date-bg__color: #000000;
+$news-date-text__color: #ffffff;
+
+$reviews-bg__color: #f8f5f2;
+
+$form-border__color: #e5ddd5;
+$form-bg__color: #f8f5f2;
+$form-input-bg__color: #ffffff;
+$form-button-bg__color: #826550;
+
+$works-bg__color: #f8f5f2;
+$works-label-bg__color: #826550;
+
+$price-bg__color: #353535;
+$discount-border__color: #484848;
+
+$footer-bg__color: #292929;

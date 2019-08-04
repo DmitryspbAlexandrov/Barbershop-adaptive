@@ -1,0 +1,67 @@
+.works {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: $font-base;
+  color: $text__color--black;
+  background-color: $works-bg__color;
+}
+
+.works__title {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.works__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.works__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.works__work-of-month {
+  width: 176px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: $text__color--white;
+  background-color: $works-label-bg__color;
+}
+
+.works__name {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: bold;
+}
+
+.works__about-customers {
+  padding: 0;
+  margin: 0;
+}
+
+.works__block-servises {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.works__servis {
+  font-size: 16px;
+  line-height: 27px;
+  text-transform: uppercase;
+}

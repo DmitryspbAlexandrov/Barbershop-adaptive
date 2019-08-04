@@ -1,0 +1,24 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  background-color: $button-bg__color;
+}
+
+.site-list__item--active {
+  background-color: $m-nav-bg__color--active;
+}
+
+.site-list__link {
+  font-family: $font-base;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $text__color--white;
+  text-decoration: none;
+}

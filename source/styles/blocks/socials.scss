@@ -1,0 +1,22 @@
+.social {
+  font-family: $font-base;
+  padding: 0;
+  margin: 0;
+}
+
+.social__title {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: normal;
+  color: $text__color--white;
+}
+
+.social__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social__link {
+  text-decoration: none;
+}

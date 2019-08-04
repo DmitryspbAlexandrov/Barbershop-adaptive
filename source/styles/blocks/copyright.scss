@@ -1,0 +1,22 @@
+.copyright {
+  font-family: $font-base;
+  font-size: 18px;
+  line-height: 24px;
+  color: $text__color--white;
+}
+
+.copyright__text {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+.copyright__link {
+  padding: 0;
+  margin: 10px auto;
+  font-family: $font-base;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $text__color--white;
+}
