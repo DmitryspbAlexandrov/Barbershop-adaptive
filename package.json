@@ -64,5 +64,5 @@
     "test": "npm run lintspaces && npm run stylelint && npm run eslint"
   },
   "author": "Dmitry Alexandrov <dmitryspbalexandrov@gmail.com>",
-  "license": "ISC"
+  "license": "MIT"
 }
