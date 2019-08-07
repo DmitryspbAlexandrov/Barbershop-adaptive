@@ -1,0 +1,35 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  min-width: 160px;
+  height: 50px;
+  padding: 0 70px;
+
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: $form-button-bg__color;
+  color: $text__color--white;
+  border: none;
+}
+
+.button--to-main {
+  display: block;
+  box-sizing: border-box;
+  width: 160px;
+  height: 50px;
+  padding: 0;
+  font-family: $font-base;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $text__color--black;
+  background-color: $w-button-bg__color;
+  border: 1px solid $w-button-border__color;
+}

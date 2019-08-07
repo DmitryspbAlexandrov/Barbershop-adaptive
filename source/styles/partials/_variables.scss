@@ -33,16 +33,19 @@ $d-nav-text__color--active: #4d4d4d;
 
 //button
 //white button
-$button-border__color: #d5c9bd;
-$button-bg__color: #ffffff;
-$button-bg__color--hover: #d5c9bd;
-$button-text__color--hover: #958c84;
+$w-button-border__color: #d5c9bd;
+$w-button-bg__color: #ffffff;
+$w-button-bg__color--hover: #d5c9bd;
+$w-button-text__color--hover: #958c84;
 
 //form button
 $button-bg__color: #826550;
 $button-bg__color--hover: #6a4d38;
 $button-bg__color--disabled: #aeaeae;
 $btton-text__color--active: #978374;
+
+//slider
+$slider-toggle__border: #969696;
 
 //main
 $main-bg__color: #f8f5f2;
@@ -77,3 +80,4 @@ $price-bg__color: #353535;
 $discount-border__color: #484848;
 
 $footer-bg__color: #292929;
+$footer-border__color: #3d3d3d;
