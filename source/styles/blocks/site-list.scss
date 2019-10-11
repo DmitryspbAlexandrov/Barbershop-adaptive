@@ -22,3 +22,19 @@
   color: $text__color--white;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+
+  .site-list {
+    width: 570px;
+  }
+
+}
+
+@media (min-width: $desctop-width) {
+
+  .site-list {
+    width: 780px;
+  }
+
+}

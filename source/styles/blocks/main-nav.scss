@@ -1,4 +1,6 @@
 .main-nav {
+  width: 320px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   font-size: 18px;
@@ -16,4 +18,34 @@
 .main-nav__wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (min-width: $desctop-width) {
+
+  .main-nav__wrapper {
+    width: 960px;
+  }
+
 }

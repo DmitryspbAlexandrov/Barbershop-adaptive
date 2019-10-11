@@ -13,7 +13,7 @@
 .page-header__logo {
   display: block;
   width: 226px;
-  height: 30px;
+  height: 85px;
   margin: 0;
   padding: 0;
   background-color: $main-bg__color--gray;
@@ -30,4 +30,20 @@ padding: 0;
   margin: 0;
   padding: 0;
   background-color: $footer-bg__color;
+}
+
+@media (min-width: $tablet-width) {
+
+  .page-header__logo {
+    height: 400px;
+    order: 2;
+  }
+
+}
+
+@media (min-width: $desctop-width) {
+
+  .page-header__logo {
+    height: 648px;
+  }
 }

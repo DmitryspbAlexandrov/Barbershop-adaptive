@@ -22,3 +22,20 @@
   color: $text__color--white;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+
+  .user-list {
+    width: 60px;
+  }
+
+}
+
+
+@media (min-width: $desctop-width) {
+
+  .user-list {
+    width: 160px;
+  }
+
+}
