@@ -1,6 +1,12 @@
 .stats {
+  width: 320px;
+  margin: 0 auto;
   font-family: $font-base;
   background-color: #333333;
+}
+
+.stats__header {
+  padding: 30px 40px 25px 40px;
 }
 
 .stats__slogan {
@@ -27,6 +33,7 @@
 }
 
 .stats__list {
+  width: 100%;
   color: $text__color--white;
 }
 
@@ -38,4 +45,35 @@
 .stats__field {
   font-size: 18px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .stats {
+    width: 640px;
+    margin-top: -185px;
+  }
+
+  .stats__list {
+    display: flex;
+  }
+
+}
+
+@media (min-width: $desctop-width) {
+
+  .stats {
+    display: flex;
+    widht: 960px;
+    margin-top: -160px;
+  }
+
+  .stats__header {
+    width: 240px;
+  }
+
+  .stats__list {
+    width: 640px;
+  }
+
 }
