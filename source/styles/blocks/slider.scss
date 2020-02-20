@@ -1,17 +1,50 @@
+.slider__item--1 {
+  display: flex;
+}
+
+.slider__item--2 {
+  display: none;
+}
+
+.slider__item--3 {
+  display: none;
+}
+
 .slider__toggles{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 140px;
+  margin: 0 auto;
 }
 
 .slider__toggle {
-display: block;
+display: flex;
+justify-content: space-between;
 width: 8px;
 height: 8px;
 padding: 0;
-margin: 0;
+margin: 0 auto;
 background-color: transparent;
 border: none;
 border: 2px solid $slider-toggle__border;
 transform: rotate(45deg);
+}
+
+.slider__toggle--active {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.slider__toggle--active-rev {
+  background-color: #353535;
+  border-color: #353535;
+}
+
+@media (min-width: $tablet-width) {
+
+  .slider__toggles {
+    display: none;
+  }
+
 }

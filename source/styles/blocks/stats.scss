@@ -1,12 +1,15 @@
 .stats {
   width: 320px;
   margin: 0 auto;
+  padding: 0;
   font-family: $font-base;
   background-color: #333333;
 }
 
 .stats__header {
   padding: 30px 40px 25px 40px;
+  text-align: center;
+  background-color: $stats-bg__color;
 }
 
 .stats__slogan {
@@ -14,7 +17,7 @@
   margin: 0;
   font-size: 30px;
   line-height: 30px;
-  text-align: center;
+  text-transform: uppercase;
   color: $text__color--black;
 }
 
@@ -32,9 +35,20 @@
   color: $text-color--lightgrey;
 }
 
+.stats__legend--top {
+  display: none;
+}
+
 .stats__list {
   width: 100%;
   color: $text__color--white;
+}
+
+.stats__cells {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 
 .stats__value {
@@ -43,8 +57,10 @@
 }
 
 .stats__field {
+  width: 130px;
   font-size: 18px;
   line-height: 18px;
+  direction: rtl;
 }
 
 @media (min-width: $tablet-width) {
@@ -56,6 +72,38 @@
 
   .stats__list {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .stats__cells {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 320px;
+    height: 160px;
+    padding: 35px 35px;
+  }
+
+  .stats__value {
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .stats__field {
+    width: 100%;
+    direction: ltr;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .stats__legend--top {
+    display: block;
+  }
+
+  .stats__legend--bottom {
+    display: none;
   }
 
 }
@@ -64,12 +112,12 @@
 
   .stats {
     display: flex;
-    widht: 960px;
+    width: 960px;
     margin-top: -160px;
   }
 
   .stats__header {
-    width: 240px;
+    width: 320px;
   }
 
   .stats__list {

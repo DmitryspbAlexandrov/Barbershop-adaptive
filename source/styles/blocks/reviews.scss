@@ -1,15 +1,30 @@
 .reviews {
+  padding: 0;
+  padding-top: 30px;
   font-family: $font-base;
   background-color: $reviews-bg__color;
   color: $text__color--black;
 }
 
+.reviews__wrapper {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.reviews__list {
+  display: flex;
+  flex-direction: row;
+}
+
 .reviews__title {
   padding: 0;
+  padding-bottom: 35px;
   margin: 0;
   font-size: 30px;
   line-height: 30px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .reviews__item {
@@ -17,9 +32,14 @@
   margin: 0;
 }
 
+.reviews__block {
+  width: 210px;
+  flex-direction: column;
+}
+
 .reviews__write {
   display: none;
-  width: 280px;
+  width: 160px;
   heidht: 50px;
   padding: 0;
   margin: 0;
@@ -35,12 +55,14 @@
 }
 
 .reviews__author-picture {
+  width: 70px;
   padding: 0;
   margin: 0;
 }
 
 .reviews__author-name {
   padding: 0;
+  padding-bottom: 15px;
   margin: 0;
   font-size: 24px;
   line-height: 27px;
@@ -51,6 +73,7 @@
 .reviews__text {
   padding: 0;
   margin: 0;
+  margin-bottom: 30px;
   font-size: 18px;
   line-height: 27px;
 }
@@ -65,5 +88,66 @@
 
 .reviews__toggles {
   padding: 0;
-  margin: 0;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+
+  .reviews__wrapper {
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .reviews__title {
+    padding-bottom: 50px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .reviews__write {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .reviews__author-picture {
+    width: 110px;
+  }
+
+  .reviews__block {
+    width: 430px;
+    padding-left: 30px;
+  }
+
+  .reviews__prev {
+    display: block;
+    width: 48px;
+    height: 158px;
+    margin: 0;
+    padding: 0;
+    color: $text__color--black;
+    background-color: $w-button-bg__color;
+    border: 1px solid $w-button-border__color;
+    text-align: center;
+  }
+
+  .reviews__next {
+    display: block;
+    width: 48px;
+    height: 158px;
+    margin: 0;
+    padding: 0;
+    color: $text__color--black;
+    background-color: $w-button-bg__color;
+    border: 1px solid $w-button-border__color;
+    text-align: center;
+  }
+
+}
+
+@media (min-width: $desctop-width) {
+
 }

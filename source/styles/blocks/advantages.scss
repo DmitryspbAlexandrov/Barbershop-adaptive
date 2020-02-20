@@ -8,6 +8,8 @@
 
 .advantages__title {
   padding: 0;
+  padding-top: 34px;
+  padding-bottom: 22px;
   margin: 0;
   font-size: 30px;
   line-height: 30px;
@@ -19,14 +21,50 @@ padding: 0;
 margin: 0;
 }
 
+.advantages__item {
+  display: none;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.advantages__item--fast {
+  display: flex;
+  flex-direction: column;
+}
+
 .advantages__description {
   padding: 0;
+  padding-bottom: 25px;
   margin: 0;
   font-size: 20px;
   line-height: 27px;
 }
 
 .adventages__toggles {
-  padding: 0;
-  margin: 0;
+  display: flex;
+  padding: 0 20px;
+  padding-bottom: 45px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+
+  .advantages__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 640px;
+    padding-left: 160px;
+    padding-right: 35px;
+  }
+
+}
+
+@media (min-width: $desctop-width) {
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+  }
+
 }

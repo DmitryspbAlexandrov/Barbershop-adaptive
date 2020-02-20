@@ -1,6 +1,12 @@
 .page {
+  min-width: 320px;
   margin: 0;
   padding: 0;
+  font-size: $font-size-base;
+  line-height: 27px;
+  font-family: $font-base;
+  color: #f7f4f1;
+  background-color: #353535;
 }
 
 .page-header {
@@ -16,7 +22,6 @@
   height: 85px;
   margin: 0;
   padding: 0;
-  background-color: $main-bg__color--gray;
 }
 
 .page-main {
