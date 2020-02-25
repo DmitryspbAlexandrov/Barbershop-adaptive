@@ -98,6 +98,7 @@
 @media (min-width: $tablet-width) {
 
   .news__wrapper {
+    width: 640px;
     position: relative;
   }
 
@@ -137,6 +138,14 @@
 }
 
 @media (min-width: $desctop-width) {
+
+  .news {
+    padding: 0 120px;
+  }
+
+  .news__wrapper {
+    width: 960px;
+  }
 
   .news__item--3 {
     display: flex;

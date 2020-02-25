@@ -66,6 +66,8 @@
 @media (min-width: $tablet-width) {
 
   .stats {
+    display: flex;
+    flex-direction: column;
     width: 640px;
     margin-top: -185px;
   }
@@ -112,6 +114,7 @@
 
   .stats {
     display: flex;
+    flex-direction: row;
     width: 960px;
     margin-top: -160px;
   }
