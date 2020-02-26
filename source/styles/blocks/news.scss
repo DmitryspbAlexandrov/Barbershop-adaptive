@@ -1,6 +1,6 @@
 .news {
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   margin: 0px;
   font-family: $font-base;
   font-size: 18px;
@@ -140,7 +140,7 @@
 @media (min-width: $desctop-width) {
 
   .news {
-    padding: 0 120px;
+    padding: 0;
   }
 
   .news__wrapper {

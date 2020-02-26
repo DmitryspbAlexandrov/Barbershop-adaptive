@@ -1,6 +1,5 @@
 .reviews {
   padding: 0;
-  padding-top: 30px;
   font-family: $font-base;
   background-color: $reviews-bg__color;
   color: $text__color--black;
@@ -140,7 +139,7 @@
   .reviews__prev {
     display: block;
     width: 50px;
-    height: 158px;
+    height: 160px;
     margin: 0;
     padding: 0;
     color: $text__color--black;
@@ -152,7 +151,7 @@
   .reviews__next {
     display: block;
     width: 50px;
-    height: 158px;
+    height: 160px;
     margin: 0;
     padding: 0;
     color: $text__color--black;
@@ -166,7 +165,6 @@
 @media (min-width: $desctop-width) {
 
   .reviews {
-    width: 1200px;
     padding: 0 128px;
   }
 
@@ -175,5 +173,24 @@
     margin: 0 auto;
   }
 
+  .slider__list {
+    justify-content: space-between;
+  }
 
+  .reviews__item {
+    width: 820px;
+    height: 160px;
+    padding: 0 30px;
+  }
+
+  .reviews__author-picture {
+    width: 250px;
+    height: 160px;
+    padding-left: 20px;
+  }
+
+  .reviews__block {
+    width: auto;
+    padding: 0 70px;
+  }
 }

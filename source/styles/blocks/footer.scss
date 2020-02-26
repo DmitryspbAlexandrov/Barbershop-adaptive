@@ -1,0 +1,30 @@
+.footer__wrapper {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+
+  .footer__wrapper {
+    width: 768px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 64px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+}
+
+@media (min-width: $desctop-width) {
+
+  .footer__wrapper {
+    width: 1200px;
+    padding: 0 120px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+}
