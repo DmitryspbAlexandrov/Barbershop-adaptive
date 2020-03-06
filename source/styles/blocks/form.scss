@@ -6,8 +6,15 @@
   background-color: $form-bg__color;
 }
 
+.form__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 35px 20px 75px 20px;
+}
+
 .form__title {
   padding: 0;
+  padding-bottom: 35px;
   margin: 0;
   font-size: 30px;
   line-height: 30px;
@@ -17,6 +24,25 @@
   padding: 0;
   margin: 0;
   border: none;
+}
+
+.form__section-customer {
+  padding: 0;
+  padding-bottom: 35px;
+  margin: 0;
+}
+
+.form__section-contacts {
+  padding: 0;
+  padding-bottom: 35px;
+  margin: 0;
+}
+
+.form__section-to_master {
+  display: block;
+  padding: 0;
+  padding-bottom: 40px;
+  margin: 0;
 }
 
 .form__item {
@@ -48,10 +74,49 @@ textarea::placeholder {
   color: $text__color--black;
 }
 
+.form__legend {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .form__list {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.form__list-beard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form-list__item-beard {
+  width: 60px;
+  height: 205px;
+  padding: 0;
+  margin: 0 15px 5px 15px;
+}
+
+.form__list-additionally {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form-list__item-additionally {
+  padding-left: 60px;
+  margin-bottom: 40px;
 }
 
 .form__button {
@@ -60,4 +125,36 @@ textarea::placeholder {
   border: none;
   background-color: $form-button-bg__color;
   color: $text__color--white;
+}
+
+@media (min-width: $tablet-width) {
+
+  .form {
+    padding: 55px 64px 80px 64px;
+  }
+
+  .form__wrapper {
+    position: relative;
+    width: 640px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .form__title {
+    padding: 0;
+    padding-bottom: 80px;
+    margin: 0;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .form__section-customer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    padding-bottom: 40px;
+    margin: 0;
+  }
+
 }
