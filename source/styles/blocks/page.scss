@@ -22,6 +22,12 @@
   height: 85px;
   margin: 0;
   padding: 0;
+  text-align: center;
+}
+
+.page-header__logo-image {
+  width: 226px;
+  height: 85px;
 }
 
 .page-main {
@@ -39,9 +45,26 @@ padding: 0;
 
 @media (min-width: $tablet-width) {
 
+  .page-header {
+    background-color: $t-nav-bg__color;
+  }
+
   .page-header__logo {
-    height: 400px;
     order: 2;
+    width: 100%;
+    height: 400px;
+    background-color: $t-nav-bg__color;
+    background-image: url("img/bg-header/jpg");
+    background-repeat: no-repeat;
+    background-position: center -9px;
+  }
+
+  .page-header__logo-image{
+    display: block;
+    width: 370px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 40px;
   }
 
 }
@@ -50,5 +73,12 @@ padding: 0;
 
   .page-header__logo {
     height: 648px;
+    background-position: center 0;
+    background-size: cover;
   }
+
+  .page-header__logo-image {
+    margin-top: 57px;
+  }
+
 }

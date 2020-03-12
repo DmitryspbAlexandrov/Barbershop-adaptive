@@ -7,7 +7,7 @@
 }
 
 .user-list__item {
-  background-color: $button-bg__color;
+  background-color: #6a3d38;
 }
 
 .user-list__item--active {
@@ -15,12 +15,29 @@
 }
 
 .user-list__login {
+  position: relative;
+  display: block;
+  padding: 17px 21px;
+  padding-left: 49px;
+
   font-family: $font-base;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
   color: $text__color--white;
   text-decoration: none;
+}
+
+.user-list__login-icon {
+  position: absolute;
+  top: 20px;
+  left: 21px;
+  width: 16px;
+  height: 16px;
+  opacity: 0.3;
+
+  polygon {
+    fill: #ffffff;
+  }
 }
 
 @media (min-width: $tablet-width) {
