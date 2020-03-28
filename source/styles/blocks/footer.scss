@@ -1,3 +1,16 @@
+.footer {
+  position: relative;
+
+  &::after {
+    content: '';
+    top: -35px;
+    position: absolute;
+    border-top: 35px solid transparent;
+    border-left: 160px solid #292929;
+    border-right: 160px solid #292929;
+  }
+}
+
 .footer__wrapper {
   min-width: 320px;
   display: flex;
@@ -5,6 +18,12 @@
 }
 
 @media (min-width: $tablet-width) {
+
+  .footer {
+    &::after {
+      display: none;
+    }
+  }
 
   .footer__wrapper {
     width: 768px;
