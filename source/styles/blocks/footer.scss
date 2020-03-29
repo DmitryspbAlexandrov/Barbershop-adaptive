@@ -1,18 +1,22 @@
 .footer {
   position: relative;
+  padding-top: 35px;
 
   &::after {
     content: '';
-    top: -35px;
     position: absolute;
-    border-top: 35px solid transparent;
-    border-left: 160px solid #292929;
-    border-right: 160px solid #292929;
+    top: 0;
+    width: 100%;
+    height: 35px;
+    margin: 0 auto;
+    clip-path: polygon(50% 35px, 0 0, 100% 0);
+    background-color: $reviews-bg__color;
   }
 }
 
 .footer__wrapper {
-  min-width: 320px;
+  width: 320px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -20,6 +24,7 @@
 @media (min-width: $tablet-width) {
 
   .footer {
+
     &::after {
       display: none;
     }

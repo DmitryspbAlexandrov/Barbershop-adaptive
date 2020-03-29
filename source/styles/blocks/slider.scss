@@ -48,8 +48,16 @@ transform: rotate(45deg);
 
 @media (min-width: $tablet-width) {
 
+  .slider__list {
+    position: relative;
+  }
+
   .slider__toggles {
-    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 47px;
+    margin-left: -70px;
+    background-color: #f8f5f2;
   }
 
 }

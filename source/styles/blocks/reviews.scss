@@ -1,4 +1,5 @@
 .reviews {
+  position: relative;
   padding: 0;
   font-family: $font-base;
   background-color: $reviews-bg__color;
@@ -9,6 +10,7 @@
   position: relative;
   width: 280px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .reviews__list {
@@ -88,7 +90,6 @@
 
 .reviews__toggles {
   padding: 0;
-  padding-bottom: 50px;
   margin: 0 auto;
 }
 
@@ -96,10 +97,12 @@
 
   .reviews {
     padding: 0 64px;
+    padding-top: 40px;
   }
 
   .reviews__wrapper {
     width: 640px;
+    padding-bottom: 50px;
   }
 
   .reviews__title {
@@ -113,6 +116,8 @@
     width: 540px;
     height: 160px;
     padding: 30px 0 30px 30px;
+    border-top: 1px solid #e5ddd5;
+    border-bottom: 1px solid #e5ddd5;
   }
 
   .reviews__write {
@@ -138,27 +143,53 @@
   }
 
   .reviews__prev {
+    position: relative;
     display: block;
     width: 50px;
     height: 160px;
     margin: 0;
     padding: 0;
     color: $text__color--black;
-    background-color: $w-button-bg__color;
+    background-color: #f8f5f2;
     border: 1px solid $w-button-border__color;
     text-align: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -6px;
+      margin-top: -6px;
+      border-right: 12px solid #000000;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+    }
   }
 
   .reviews__next {
+    position: relative;
     display: block;
     width: 50px;
     height: 160px;
     margin: 0;
     padding: 0;
     color: $text__color--black;
-    background-color: $w-button-bg__color;
+    background-color: #f8f5f2;
     border: 1px solid $w-button-border__color;
     text-align: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -6px;
+      margin-top: -6px;
+      border-left: 12px solid #000000;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+    }
   }
 
 }
@@ -167,11 +198,17 @@
 
   .reviews {
     padding: 0 128px;
+    padding-top: 40px;
+    padding-bottom: 50px;
   }
 
   .reviews__wrapper {
     width: 960px;
     margin: 0 auto;
+  }
+
+  .reviews__title {
+    padding-left: 70px;
   }
 
   .slider__list {
@@ -190,8 +227,16 @@
     padding-left: 20px;
   }
 
+  .reviews__author-name {
+    padding-top: 40px;
+  }
+
   .reviews__block {
     width: auto;
     padding: 0 70px;
+  }
+
+  .reviews__toggles {
+    bottom: 0;
   }
 }
