@@ -49,6 +49,34 @@ padding: 0;
     background-color: $t-nav-bg__color;
   }
 
+  .page-header--form,
+  .page-header--photo {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 45px;
+      margin: 0 auto;
+      clip-path: polygon(0 0, 0 45px, 50% 45px);
+      background-color: #f8f5f2;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 45px;
+      margin: 0 auto;
+      clip-path: polygon(100% 0, 100% 45px, 50% 45px);
+      background-color: #f8f5f2;
+    }
+
+  }
+
   .page-header__logo {
     order: 2;
     width: 100%;

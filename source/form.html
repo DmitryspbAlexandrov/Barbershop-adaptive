@@ -11,7 +11,7 @@
 
 <body class="page">
 
-  <header class="page-header">
+  <header class="page-header  page-header--form">
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30"
         alt="Барбершоп «Бородинский»">
@@ -54,30 +54,34 @@
           <!--ВСТАВИТЬ В FIELDSET ДОПОЛНИТЕЛЬНУЮ ОБЁРТКУ ДЛЯ РУАЛИЗАЦИИ АДАПТИВНОСТИ-->
           <fieldset class="form__section form__section-customer">
             <legend class="visually-hidden">Ваше имя</legend>
-            <p class="form__item-customer">
-              <label class="visually-hidden" for="form-surname">Фамилия</label>
-              <input class="form__input-customer" type="text" name="surname" id="form-surname" value=""
-                placeholder="Фамилия">
-            </p>
-            <p class="form__item-customer">
-              <label class="visually-hidden" for="form-name">Имя</label>
-              <input class="form__input-customer" type="text" name="name" id="form-name" value="" placeholder="Имя">
-            </p>
-            <p class="form__item-customer">
-              <label class="visually-hidden" for="form-patronymic">Отчество</label>
-              <input class="form__input-customer" type="text" name="patronymic" id="form-patronymic" value="" placeholder="Отчество">
-            </p>
+            <div class="customer__wrapper">
+              <p class="form__item form__item-customer">
+                <label class="visually-hidden" for="form-surname">Фамилия</label>
+                <input class="form__input form__input-customer" type="text" name="surname" id="form-surname" value=""
+                  placeholder="Фамилия">
+              </p>
+              <p class="form__item form__item-customer">
+                <label class="visually-hidden" for="form-name">Имя</label>
+                <input class="form__input" type="text" name="name" id="form-name" value="" placeholder="Имя">
+              </p>
+              <p class="form__item form__item-customer">
+                <label class="visually-hidden" for="form-patronymic">Отчество</label>
+                <input class="form__input" type="text" name="patronymic" id="form-patronymic" value="" placeholder="Отчество">
+              </p>
+            </div>
           </fieldset>
           <fieldset class="form__section form__section-contacts">
             <legend class="visually-hidden">Ваши контакты</legend>
-            <p class="form__item">
-              <label class="visually-hidden" for="fomr-tel">Контактный телефон</label>
-              <input class="form__input" type="text" name="tel" id="form-tel" value="" placeholder="Контактный телефон">
-            </p>
-            <p class="form__item">
-              <label class="visually-hidden" for="fomr-email">Контактный e-mail</label>
-              <input class="form__input" type="text" name="email" id="form-email" value="" placeholder="Контактный e-mail">
-            </p>
+            <div class="contacts--wrapper">
+              <p class="form__item form__item--contacts form__item--first">
+                <label class="visually-hidden" for="fomr-tel">Контактный телефон</label>
+                <input class="form__input" type="text" name="tel" id="form-tel" value="" placeholder="Контактный телефон">
+              </p>
+              <p class="form__item form__item--contacts">
+                <label class="visually-hidden" for="fomr-email">Контактный e-mail</label>
+                <input class="form__input" type="text" name="email" id="form-email" value="" placeholder="Контактный e-mail">
+              </p>
+            </div>
           </fieldset>
           <p class="form__section-to_master">
             <label for="form-textarea" class="visually-hidden">Дополнительная информация для мастера</label>
