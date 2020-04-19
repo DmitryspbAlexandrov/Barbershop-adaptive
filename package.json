@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
+    "npm-update": "^2.1.0",
     "picturefill": "^3.0.3",
     "standart": "^6.1.0",
     "svg4everybody": "^2.1.9"

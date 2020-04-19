@@ -20,7 +20,7 @@
   display: block;
   width: 226px;
   height: 85px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
 }
@@ -41,6 +41,10 @@ padding: 0;
   margin: 0;
   padding: 0;
   background-color: $footer-bg__color;
+}
+
+.page-photo__wrapper {
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -82,12 +86,17 @@ padding: 0;
     width: 100%;
     height: 400px;
     background-color: $t-nav-bg__color;
-    background-image: url("img/bg-header/jpg");
+    background-image: url("../../img/backgrounds/back-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center -9px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/backgrounds/back-desktop@2x.jpg");
+      background-size: 1338px auto;
+    }
   }
 
-  .page-header__logo-image{
+  .page-header__logo img{
     display: block;
     width: 370px;
     height: auto;

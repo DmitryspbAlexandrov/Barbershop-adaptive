@@ -12,9 +12,13 @@
 <body class="page">
 
  <header class="page-header  page-header--photo">
-   <a class="page-header__logo" href="index.html">
-     <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30"
-       alt="Барбершоп «Бородинский»">
+   <a class="page-header__logo">
+     <picture>
+       <source media="(min-width: 1200px)" srcset="img/content/logo-desctop.svg">
+       <source media="(min-width: 768px)" srcset="img/content/logo-tablet.svg">
+       <img class="page-header__logo-image" src="img/content/logo-mobile.svg" width="226" height="30"
+         alt="Барбершоп «Бородинский»">
+     </picture>
    </a>
    <nav class="main-nav">
      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -46,49 +50,77 @@
  </header>
 
  <main class="page-main">
-   <div class="photo__wrapper">
+   <div class="page-photo__wrapper">
      <h1 class="visually-hidden">Наши работы и прейскурант</h1>
      <a class="button button--to-main" href="index.html">На главную</a>
+
      <section class="works">
        <h2 class="works__title">Наши работы</h2>
-       <ul class="works__list">
-         <li class="works__item works__item--wide">
-          <img class="works__image" src="" alt="Лжепётр Мчиславский">
+       <div class="works__list">
+         <article class="works__item works__item--wide">
+           <picture>
+             <source media="(min-width: 1200px)"
+              srcset="img/content/photo-1-desktop.jpg 1x, img/content/photo-1-desktop@2x.jpg 2x">
+             <source media="(min-width: 768px)"
+               srcset="img/content/photo-1-tablet.jpg 1x, img/content/photo-1-tablet@2x.jpg 2x">
+              <img class="works__image" src="img/content/photo-1-mobile.jpg" srcset="img/content/photo-1-mobile@2x.jpg 2x" alt="Лжепётр Мчиславский">
+            </picture>
           <div class="works__work-of-month">Работа месяца</div>
-          <b class="works__name">Лжепётр Мчиславский</b>
-          <p class="works__about-customers">Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
-          <div class="works__block-servises">
-            <span class="works__servis works__servis--haircut">Стрижка</span>
-            <span class="works__servis works__servis--shaving">Бритье</span>
-            <span class="works__servis works__servis--mustache">Усы</span>
-          </div>
-         </li>
-         <li class="works__item">
-           <img class="works__image" src="" alt="Саша Мальцев">
-           <b class="works__name">Саша Мальцев</b>
-           <p class="works__about-customers">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
-           <div class="works__block-servises">
-             <span class="works__servis works__servis--haircut">Стрижка</span>
-           </div>
-         </li>
-         <li class="works__item">
-           <img class="works__image" src="" alt="Владимир Иваныч">
-           <b class="works__name">Владимир Иваныч</b>
-           <p class="works__about-customers">К зимнему сезону - готов!</p>
-           <div class="works__block-servises">
-             <span class="works__servis works__servis--beard">Борода</span>
-             <span class="works__servis works__servis--mustache">Усы</span>
-           </div>
-         </li>
-         <li class="works__item">
-           <img class="works__image" src="" alt="Винстон Синий">
-           <b class="works__name">Винстон Синий</b>
-           <p class="works__about-customers">Как только заростаю и волосы начинают мешать видеть - бегом в Бородинский!</p>
-           <div class="works__block-servises">
-             <span class="works__servis works__servis--haircut">Стрижка</span>
-           </div>
-        </li>
-       </ul>
+          <h3 class="works__name">Лжепётр Мчиславский</h3>
+          <blockquote class="works__about-customers">Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</blockquote>
+          <ul class="works__block-servises">
+            <li class="works__servis works__servis--haircut">Стрижка</li>
+            <li class="works__servis works__servis--shaving">Бритье</li>
+            <li class="works__servis works__servis--mustache">Усы</span>
+          </ul>
+         </article>
+         <article class="works__item">
+           <picture>
+             <source media="(min-width: 1200px)"
+               srcset="img/content/photo-2-desktop.jpg 1x, img/content/photo-2-desktop@2x.jpg 2x">
+             <source media="(min-width: 768px)"
+               srcset="img/content/photo-2-tablet.jpg 1x, img/content/photo-2-tablet@2x.jpg 2x">
+             <img class="works__image" src="img/content/photo-2-mobile.jpg"
+               srcset="img/content/photo-2-mobile@2x.jpg 2x" alt="Саша Мальцев">
+           </picture>
+           <h3 class="works__name">Саша Мальцев</h3>
+           <blockquote class="works__about-customers">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</blockquote>
+           <ul class="works__block-servises">
+             <li class="works__servis works__servis--haircut">Стрижка</li>
+           </ul>
+         </article>
+         <article class="works__item">
+           <picture>
+             <source media="(min-width: 1200px)"
+               srcset="img/content/photo-3-desktop.jpg 1x, img/content/photo-3-desktop@2x.jpg 2x">
+             <source media="(min-width: 768px)"
+               srcset="img/content/photo-3-tablet.jpg 1x, img/content/photo-3-tablet@2x.jpg 2x">
+             <img class="works__image" src="img/content/photo-3-mobile.jpg"
+               srcset="img/content/photo-3-mobile@2x.jpg 2x" alt="Владимир Иваныч">
+           </picture>
+           <h3 class="works__name">Владимир Иваныч</h3>
+           <blockquote class="works__about-customers">К зимнему сезону - готов!</blockquote>
+           <ul class="works__block-servises">
+             <li class="works__servis works__servis--beard">Борода</li>
+             <li class="works__servis works__servis--mustache">Усы</li>
+           </ul>
+         </article>
+         <article class="works__item">
+           <picture>
+             <source media="(min-width: 1200px)"
+               srcset="img/content/photo-4-desktop.jpg 1x, img/content/photo-4-desktop@2x.jpg 2x">
+             <source media="(min-width: 768px)"
+               srcset="img/content/photo-4-tablet.jpg 1x, img/content/photo-4-tablet@2x.jpg 2x">
+             <img class="works__image" src="img/content/photo-4-mobile.jpg"
+               srcset="img/content/photo-4-mobile@2x.jpg 2x" alt="Винстон Синий">
+           </picture>
+           <h3 class="works__name">Винстон Синий</h3>
+           <blockquote class="works__about-customers">Как только заростаю и волосы начинают мешать видеть - бегом в Бородинский!</blockquote>
+           <ul class="works__block-servises">
+             <li class="works__servis works__servis--haircut">Стрижка</li>
+           </ul>
+        </article>
+       </div>
      </section>
 
      <section class="price">
