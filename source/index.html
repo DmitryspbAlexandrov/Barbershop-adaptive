@@ -43,8 +43,7 @@
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
             <a class="user-list__login" href="login.html">
-              <svg class="user-list__login-icon" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+              <svg class="user-list__login-icon" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 16 16">
               <polygon class="st0" points="0,7 7,7 7,4.1 11,8 7,11.9 7,9.1 0,9 "/>
               <polygon class="st0" points="7,0 7,2 14,2 14,14 7,14 7,16 16,16 16,0 "/>
               </svg>
@@ -172,6 +171,10 @@
           <blockquote class="reviews__item slider__item slider__item--1">
             <p class="reviews__author-picture">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/reviews-travis-desctop.webp 1x, img/content/reviews-travis-desctop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px;)" srcset="img/content/reviews-travis-tablet.webp 1x, img/content/reviews-travis-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/content/reviews-travis-mobile.webp 1x, img/content/reviews-travis-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/content/reviews-travis-desctop.jpg 1x, img/content/reviews-travis-desctop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
