@@ -1,6 +1,6 @@
 .works {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-size: 18px;
   line-height: 27px;
   font-family: $font-base;
@@ -8,8 +8,14 @@
   background-color: $works-bg__color;
 }
 
+.works__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 30px 20px 35px 20px;
+}
+
 .works__title {
-  padding: 0;
+  padding: 30px 0;
   margin: 0;
   font-size: 30px;
   font-weight: bold;
@@ -25,12 +31,16 @@
 }
 
 .works__item {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
 
 .works__work-of-month {
-  width: 176px;
+  position: absolute;
+  top: 400px;
+  left: 0;
+  width: 166px;
   height: 50px;
   font-size: 20px;
   line-height: 50px;
@@ -39,10 +49,20 @@
   text-align: center;
   color: $text__color--white;
   background-color: $works-label-bg__color;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    border: 10px solid $works-label-bg__color;
+    border-top: 25px solid $works-label-bg__color;
+    border-bottom: 25px solid $works-label-bg__color;
+    border-right: 10px solid transparent;
+  }
 }
 
 .works__name {
-  padding: 0;
+  padding: 20px 25px 10px;
   margin: 0;
   font-size: 24px;
   line-height: 27px;
@@ -50,7 +70,8 @@
 }
 
 .works__about-customers {
-  padding: 0;
+  padding: 0 25px;
+  padding-bottom: 20px;
   margin: 0;
 }
 
@@ -58,12 +79,65 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 0;
+  padding-left: 25px;
+  margin: 0;
+  list-style: none;
 }
 
 .works__servis {
+  position: relative;
+  width: 50%;
+  padding-left: 50px;
   font-size: 16px;
   line-height: 27px;
   text-transform: uppercase;
+}
+
+.works__servis--haircut {
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/ico/scissors.svg");
+    background-size: 21px 20px;
+    background-position: 50% 50%;
+  }
+}
+
+.works__servis--shaving,
+.works__servis--beard {
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/ico/little-beard.svg");
+    background-size: 23px 21px;
+    background-position: 50% 50%;
+  }
+}
+
+.works__servis--mustache {
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/ico/mustache.svg");
+    background-size: 45px 12px;
+    background-position: 50% 50%;
+  }
 }
 
 //для картинок можно использовать overflow: hedden; и max-width/max-height;

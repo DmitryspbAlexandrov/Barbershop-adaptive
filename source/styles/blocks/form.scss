@@ -96,11 +96,13 @@ textarea::placeholder {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
+  padding-bottom: 45px;
   margin: 0;
   list-style: none;
 }
 
 .form-list__item-beard {
+  position: relative;
   width: 60px;
   height: 205px;
   padding: 0;
@@ -116,6 +118,7 @@ textarea::placeholder {
 }
 
 .form-list__item-additionally {
+  position: relative;
   padding-left: 60px;
   margin-bottom: 40px;
 }

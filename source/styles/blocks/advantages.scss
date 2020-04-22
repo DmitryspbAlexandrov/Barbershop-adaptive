@@ -24,11 +24,13 @@
 }
 
 .advantages__list {
-padding: 0;
-margin: 0;
+  position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages__item {
+  position: relative;
   padding: 0 25px;
   padding-top: 100px;
   margin: 0 auto;
@@ -39,6 +41,51 @@ margin: 0;
 .advantages__item--fast {
   display: flex;
   flex-direction: column;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 90px;
+    width: 95px;
+    height: 95px;
+    background-image: url(../../img/ico/fast.svg);
+    background-repeat: no-repeat;
+    background-size: 95px 95px;
+    background-position: 50% 50%;
+  }
+}
+
+.advantages__item--cool {
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 90px;
+    width: 95px;
+    height: 95px;
+    background-image: url(../../img/ico/chair.svg);
+    background-repeat: no-repeat;
+    background-size: 95px 95px;
+    background-position: 50% 50%;
+  }
+}
+
+.advantages__item--price {
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 90px;
+    width: 95px;
+    height: 95px;
+    background-image: url(../../img/ico/lighthouse.svg);
+    background-repeat: no-repeat;
+    background-size: 95px 95px;
+    background-position: 50% 50%;
+  }
 }
 
 .advantages__description {
@@ -77,8 +124,29 @@ margin: 0;
     border-bottom: 1px solid #4a4a4a;
   }
 
+  .advantages__item--fast {
+
+    &::before {
+      top: 85px;
+      left: 40px;
+    }
+  }
+
+  .advantages__item--cool {
+
+    &::before {
+      top: 85px;
+      left: 40px;
+    }
+  }
+
   .advantages__item--price {
     border: none;
+
+    &::before {
+      top: 85px;
+      left: 40px;
+    }
   }
 
   .advantages__description {
@@ -107,6 +175,34 @@ margin: 0;
     padding: 170px 40px 40px 40px;
     text-align: center;
     border: none;
+  }
+
+  .advantages__item--fast {
+
+    &::before {
+      top: 75px;
+      left: 50%;
+      margin-left: -44px;
+    }
+  }
+
+  .advantages__item--cool {
+
+    &::before {
+      top: 75px;
+      left: 50%;
+      margin-left: -44px;
+    }
+  }
+
+  .advantages__item--price {
+    border: none;
+
+    &::before {
+      top: 75px;
+      left: 50%;
+      margin-left: -44px;
+    }
   }
 
   .advantages__title {

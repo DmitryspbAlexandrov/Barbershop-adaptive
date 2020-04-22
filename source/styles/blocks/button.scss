@@ -34,6 +34,126 @@
   border: 1px solid $w-button-border__color;
 }
 
+//radio button
+.radio__name {
+  display: block;
+  padding: 0;
+  padding-bottom: 15px;
+  margin: 0;
+  margin-top: 65px;
+}
+
+.beard-icon {
+  color: #826550;
+}
+
+.radio__button {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #d8ccc1;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.form__radio:checked+.radio__button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -9px;
+  margin-top: -9px;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border: 1px solid #d8ccc1;
+  border-radius: 50%;
+}
+
+.form__radio:hover+.radio__button {
+  border: 1px solid #d5c9bd;
+}
+
+.form__radio:active+.radio__button {
+  background-color: #d5c9bd;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -9px;
+    margin-top: -9px;
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border: 1px solid #d8ccc1;
+    border-radius: 50%;
+  }
+}
+
+.form__radio:checked:hover+.radio__button {
+  border: 1px solid #d5c9bd;
+
+  &::before {
+    border: 1px solid #d8ccc1;
+  }
+}
+
+.form__radio:checked:active+.radio__button {
+  background-color: #d5c9bd;
+}
+
+//checkbox
+
+.checkbox__button {
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #d8ccc1;
+}
+
+.form__checkbox:hover + .checkbox__button {
+  border: 1px solid #d5c9bd;
+}
+
+.form__checkbox:checked + .checkbox__button{
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 13px;
+    width: 20px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(-40deg);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 19px;
+    left: 7px;
+    width: 10px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(40deg);
+  }
+}
+
+.form__checkbox:checked:active + .checkbox__button {
+  background-color: #d5c9bd;
+}
+
+.form__checkbox:active+.checkbox__button {
+  background-color: #d5c9bd;
+}
+
 @media (min-width: $tablet-width) {
 
   .button--to-main {
@@ -43,4 +163,7 @@
     right: 0;
   }
 
+  .radio__name {
+    padding-bottom: 35px;
+  }
 }

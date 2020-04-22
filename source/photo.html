@@ -11,6 +11,22 @@
 
 <body class="page">
 
+  <!--<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+
+    <symbol id="login-icon" x="0px" y="0px" viewBox="0 0 16 16">
+      <style type="text/css">
+        .st0 {
+          fill: #B2B2B2;
+        }
+      </style>
+      <g>
+        <polygon class="st0" points="0,7 7,7 7,4.1 11,8 7,11.9 7,9.1 0,9 " fill="currentColor" />
+        <polygon class="st0" points="7,0 7,2 14,2 14,14 7,14 7,16 16,16 16,0 " fill="currentColor" />
+      </g>
+    </symbol>
+
+  </svg>-->
+
  <header class="page-header  page-header--photo">
    <a class="page-header__logo">
      <picture>
@@ -42,7 +58,14 @@
        </ul>
        <ul class="main-nav__list user-list">
          <li class="user-list__item">
-           <a class="user-list__login" href="login.html">Войти</a>
+           <a class="user-list__login" href="login.html">
+             <!--<svg class="user-list__login-icon" width="16px" height="16px">
+               <use xlink:href="#login-icon"></use>
+             </svg>-->
+             <svg class="user-list__login-icon" width="16px" height="16px"> <use xlink:href="img/ico/sprait.svg#login-icon"></use>
+             </svg>
+             Войти
+            </a>
          </li>
        </ul>
      </div> <!--end main-nav__wrapper-->
@@ -55,91 +78,93 @@
      <a class="button button--to-main" href="index.html">На главную</a>
 
      <section class="works">
-       <h2 class="works__title">Наши работы</h2>
-       <div class="works__list">
-         <article class="works__item works__item--wide">
-           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-1-desktop.webp 1x, img/content/photo-1-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-1-tablet.webp 1x, img/content/photo-1-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/content/photo-1-mobile.webp 1x, img/content/photo-1-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)"
-            srcset="img/content/photo-1-desktop.jpg 1x, img/content/photo-1-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/content/photo-1-tablet.jpg 1x, img/content/photo-1-tablet@2x.jpg 2x">
-            <img class="works__image" src="img/content/photo-1-mobile.jpg" srcset="img/content/photo-1-mobile@2x.jpg 2x" alt="Лжепётр Мчиславский">
-          </picture>
-          <div class="works__work-of-month">Работа месяца</div>
-          <h3 class="works__name">Лжепётр Мчиславский</h3>
-          <blockquote class="works__about-customers">Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</blockquote>
-          <ul class="works__block-servises">
-            <li class="works__servis works__servis--haircut">Стрижка</li>
-            <li class="works__servis works__servis--shaving">Бритье</li>
-            <li class="works__servis works__servis--mustache">Усы</span>
-          </ul>
-         </article>
-         <article class="works__item">
-           <picture>
-             <source type="image/webp" media="(min-width: 1200px)"
-               srcset="img/content/photo-2-desktop.webp 1x, img/content/photo-2-desktop@2x.webp 2x">
-             <source type="image/webp" media="(min-width: 768px)"
-               srcset="img/content/photo-2-tablet.webp 1x, img/content/photo-2-tablet@2x.webp 2x">
-             <source type="image/webp"
-               srcset="img/content/photo-2-mobile.webp 1x, img/content/photo-2-mobile@2x.webp 2x">
-             <source media="(min-width: 1200px)"
-               srcset="img/content/photo-2-desktop.jpg 1x, img/content/photo-2-desktop@2x.jpg 2x">
-             <source media="(min-width: 768px)"
-               srcset="img/content/photo-2-tablet.jpg 1x, img/content/photo-2-tablet@2x.jpg 2x">
-             <img class="works__image" src="img/content/photo-2-mobile.jpg"
-               srcset="img/content/photo-2-mobile@2x.jpg 2x" alt="Саша Мальцев">
-           </picture>
-           <h3 class="works__name">Саша Мальцев</h3>
-           <blockquote class="works__about-customers">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</blockquote>
-           <ul class="works__block-servises">
-             <li class="works__servis works__servis--haircut">Стрижка</li>
-           </ul>
-         </article>
-         <article class="works__item">
-           <picture>
-             <source type="image/webp" media="(min-width: 1200px)"
-               srcset="img/content/photo-3-desktop.webp 1x, img/content/photo-3-desktop@2x.webp 2x">
-             <source type="image/webp" media="(min-width: 768px)"
-               srcset="img/content/photo-3-tablet.webp 1x, img/content/photo-3-tablet@2x.webp 2x">
-             <source type="image/webp"
-               srcset="img/content/photo-3-mobile.webp 1x, img/content/photo-3-mobile@2x.webp 2x">
-             <source media="(min-width: 1200px)"
-               srcset="img/content/photo-3-desktop.jpg 1x, img/content/photo-3-desktop@2x.jpg 2x">
-             <source media="(min-width: 768px)"
-               srcset="img/content/photo-3-tablet.jpg 1x, img/content/photo-3-tablet@2x.jpg 2x">
-             <img class="works__image" src="img/content/photo-3-mobile.jpg"
-               srcset="img/content/photo-3-mobile@2x.jpg 2x" alt="Владимир Иваныч">
-           </picture>
-           <h3 class="works__name">Владимир Иваныч</h3>
-           <blockquote class="works__about-customers">К зимнему сезону - готов!</blockquote>
-           <ul class="works__block-servises">
-             <li class="works__servis works__servis--beard">Борода</li>
-             <li class="works__servis works__servis--mustache">Усы</li>
-           </ul>
-         </article>
-         <article class="works__item">
-           <picture>
-             <source type="image/webp" media="(min-width: 1200px)"
-               srcset="img/content/photo-4-desktop.webp 1x, img/content/photo-4-desktop@2x.webp 2x">
-             <source type="image/webp" media="(min-width: 768px)"
-               srcset="img/content/photo-4-tablet.webp 1x, img/content/photo-4-tablet@2x.webp 2x">
-             <source type="image/webp"
-               srcset="img/content/photo-4-mobile.webp 1x, img/content/photo-4-mobile@2x.webp 2x">
-             <source media="(min-width: 1200px)"
-               srcset="img/content/photo-4-desktop.jpg 1x, img/content/photo-4-desktop@2x.jpg 2x">
-             <source media="(min-width: 768px)"
-               srcset="img/content/photo-4-tablet.jpg 1x, img/content/photo-4-tablet@2x.jpg 2x">
-             <img class="works__image" src="img/content/photo-4-mobile.jpg"
-               srcset="img/content/photo-4-mobile@2x.jpg 2x" alt="Винстон Синий">
-           </picture>
-           <h3 class="works__name">Винстон Синий</h3>
-           <blockquote class="works__about-customers">Как только заростаю и волосы начинают мешать видеть - бегом в Бородинский!</blockquote>
-           <ul class="works__block-servises">
-             <li class="works__servis works__servis--haircut">Стрижка</li>
-           </ul>
-        </article>
+       <div class="works__wrapper">
+        <h2 class="works__title">Наши работы</h2>
+        <div class="works__list">
+          <article class="works__item works__item--wide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-1-desktop.webp 1x, img/content/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-1-tablet.webp 1x, img/content/photo-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/photo-1-mobile.webp 1x, img/content/photo-1-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)"
+              srcset="img/content/photo-1-desktop.jpg 1x, img/content/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/content/photo-1-tablet.jpg 1x, img/content/photo-1-tablet@2x.jpg 2x">
+              <img class="works__image" src="img/content/photo-1-mobile.jpg" srcset="img/content/photo-1-mobile@2x.jpg 2x" alt="Лжепётр Мчиславский">
+            </picture>
+            <div class="works__work-of-month">Работа месяца</div>
+            <h3 class="works__name">Лжепётр Мчиславский</h3>
+            <blockquote class="works__about-customers">Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</blockquote>
+            <ul class="works__block-servises">
+              <li class="works__servis works__servis--haircut">Стрижка</li>
+              <li class="works__servis works__servis--shaving">Бритье</li>
+              <li class="works__servis works__servis--mustache">Усы</span>
+            </ul>
+          </article>
+          <article class="works__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/content/photo-2-desktop.webp 1x, img/content/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/content/photo-2-tablet.webp 1x, img/content/photo-2-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/content/photo-2-mobile.webp 1x, img/content/photo-2-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/content/photo-2-desktop.jpg 1x, img/content/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/content/photo-2-tablet.jpg 1x, img/content/photo-2-tablet@2x.jpg 2x">
+              <img class="works__image" src="img/content/photo-2-mobile.jpg"
+                srcset="img/content/photo-2-mobile@2x.jpg 2x" alt="Саша Мальцев">
+            </picture>
+            <h3 class="works__name">Саша Мальцев</h3>
+            <blockquote class="works__about-customers">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</blockquote>
+            <ul class="works__block-servises">
+              <li class="works__servis works__servis--haircut">Стрижка</li>
+            </ul>
+          </article>
+          <article class="works__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/content/photo-3-desktop.webp 1x, img/content/photo-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/content/photo-3-tablet.webp 1x, img/content/photo-3-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/content/photo-3-mobile.webp 1x, img/content/photo-3-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/content/photo-3-desktop.jpg 1x, img/content/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/content/photo-3-tablet.jpg 1x, img/content/photo-3-tablet@2x.jpg 2x">
+              <img class="works__image" src="img/content/photo-3-mobile.jpg"
+                srcset="img/content/photo-3-mobile@2x.jpg 2x" alt="Владимир Иваныч">
+            </picture>
+            <h3 class="works__name">Владимир Иваныч</h3>
+            <blockquote class="works__about-customers">К зимнему сезону - готов!</blockquote>
+            <ul class="works__block-servises">
+              <li class="works__servis works__servis--beard">Борода</li>
+              <li class="works__servis works__servis--mustache">Усы</li>
+            </ul>
+          </article>
+          <article class="works__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/content/photo-4-desktop.webp 1x, img/content/photo-4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/content/photo-4-tablet.webp 1x, img/content/photo-4-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/content/photo-4-mobile.webp 1x, img/content/photo-4-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/content/photo-4-desktop.jpg 1x, img/content/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/content/photo-4-tablet.jpg 1x, img/content/photo-4-tablet@2x.jpg 2x">
+              <img class="works__image" src="img/content/photo-4-mobile.jpg"
+                srcset="img/content/photo-4-mobile@2x.jpg 2x" alt="Винстон Синий">
+            </picture>
+            <h3 class="works__name">Винстон Синий</h3>
+            <blockquote class="works__about-customers">Как только заростаю и волосы начинают мешать видеть - бегом в Бородинский!</blockquote>
+            <ul class="works__block-servises">
+              <li class="works__servis works__servis--haircut">Стрижка</li>
+            </ul>
+          </article>
+        </div>
        </div>
      </section>
 
