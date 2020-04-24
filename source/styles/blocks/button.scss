@@ -30,7 +30,7 @@
   text-decoration: none;
   text-align: center;
   color: $text__color--black;
-  background-color: $w-button-bg__color;
+  background-color: $works-bg__color;
   border: 1px solid $w-button-border__color;
 }
 
@@ -161,6 +161,11 @@
     display: block;
     top: 0;
     right: 0;
+  }
+
+  .button--to-main-photo {
+    top: 20px;
+    right: 64px;
   }
 
   .radio__name {

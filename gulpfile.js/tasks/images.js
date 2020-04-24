@@ -16,16 +16,16 @@ const isProd = !!process.env.NODE_ENV;
 // Оптимизация изображений
 task('images', function () {
   let pluginsSvgo = [{
-      removeViewBox: false
-    },
-    {
-      removeTitle: true
-    },
-    {
-      cleanupNumericValues: {
-        floatPrecision: 1
-      }
+    removeViewBox: false
+  },
+  {
+    removeTitle: true
+  },
+  {
+    cleanupNumericValues: {
+      floatPrecision: 1
     }
+  }
   ];
 
   let pluginsImagemin = [
@@ -40,9 +40,9 @@ task('images', function () {
   ];
 
   return src([
-      `${settings.paths.src.images.all}**/*.{jpg,png,svg}`,
-      `!${settings.paths.src.images.icons}*.{jpg,png,svg}`
-    ])
+    `${settings.paths.src.images.all}**/*.{jpg,png,svg}`,
+    `!${settings.paths.src.images.icons}*.{jpg,png,svg}`
+  ])
     .pipe(changed(settings.paths.dest.images.all))
     .pipe(gulpIf(isProd, imagemin(pluginsImagemin)))
     .pipe(dest(settings.paths.dest.images.all));

@@ -1,4 +1,5 @@
 .table__item {
+  padding-bottom: 15px;
   font-family: $font-base;
   font-size: 20px;
   line-height: 27px;
@@ -14,4 +15,55 @@
 
 .table__item--large {
   display: none;
+}
+
+.table__item--number {
+  display: none;
+}
+
+.table__item--right {
+  width: 75px;
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+
+  .table__item {
+    padding: 15px 20px;
+    border: 1px solid #4a4a4a;
+  }
+
+  .table__item--number {
+    display: block;
+    color: #7d7d7d;
+  }
+
+  .table__item--large {
+    display: block;
+  }
+
+  .table__subitem {
+    display: none;
+  }
+
+  .table__item--left {
+    width: 250px;
+  }
+
+  .table__item--right {
+    width: 160px;
+  }
+
+}
+
+@media (min-width: $desctop-width) {
+
+  .table__item {
+    padding: 13px 20px;
+  }
+
+  .table__item--right {
+    text-align: left;
+  }
+
 }

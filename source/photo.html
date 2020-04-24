@@ -75,11 +75,11 @@
  <main class="page-main">
    <div class="page-photo__wrapper">
      <h1 class="visually-hidden">Наши работы и прейскурант</h1>
-     <a class="button button--to-main" href="index.html">На главную</a>
 
      <section class="works">
        <div class="works__wrapper">
         <h2 class="works__title">Наши работы</h2>
+        <a class="button button--to-main button--to-main-photo" href="index.html">На главную</a>
         <div class="works__list">
           <article class="works__item works__item--wide">
             <picture>
@@ -91,14 +91,16 @@
               <source media="(min-width: 768px)" srcset="img/content/photo-1-tablet.jpg 1x, img/content/photo-1-tablet@2x.jpg 2x">
               <img class="works__image" src="img/content/photo-1-mobile.jpg" srcset="img/content/photo-1-mobile@2x.jpg 2x" alt="Лжепётр Мчиславский">
             </picture>
-            <div class="works__work-of-month">Работа месяца</div>
-            <h3 class="works__name">Лжепётр Мчиславский</h3>
-            <blockquote class="works__about-customers">Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</blockquote>
-            <ul class="works__block-servises">
-              <li class="works__servis works__servis--haircut">Стрижка</li>
-              <li class="works__servis works__servis--shaving">Бритье</li>
-              <li class="works__servis works__servis--mustache">Усы</span>
-            </ul>
+            <div class="works__info">
+              <div class="works__work-of-month">Работа месяца</div>
+              <h3 class="works__name">Лжепётр Мчиславский</h3>
+              <blockquote class="works__about-customers">Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</blockquote>
+              <ul class="works__block-servises">
+                <li class="works__servis works__servis--haircut">Стрижка</li>
+                <li class="works__servis works__servis--shaving">Бритье</li>
+                <li class="works__servis works__servis--mustache">Усы</span>
+              </ul>
+            </div>
           </article>
           <article class="works__item">
             <picture>
@@ -115,11 +117,13 @@
               <img class="works__image" src="img/content/photo-2-mobile.jpg"
                 srcset="img/content/photo-2-mobile@2x.jpg 2x" alt="Саша Мальцев">
             </picture>
-            <h3 class="works__name">Саша Мальцев</h3>
-            <blockquote class="works__about-customers">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</blockquote>
-            <ul class="works__block-servises">
-              <li class="works__servis works__servis--haircut">Стрижка</li>
-            </ul>
+            <div class="works__info">
+              <h3 class="works__name">Саша Мальцев</h3>
+              <blockquote class="works__about-customers">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</blockquote>
+              <ul class="works__block-servises">
+                <li class="works__servis works__servis--haircut">Стрижка</li>
+              </ul>
+            </div>
           </article>
           <article class="works__item">
             <picture>
@@ -136,12 +140,14 @@
               <img class="works__image" src="img/content/photo-3-mobile.jpg"
                 srcset="img/content/photo-3-mobile@2x.jpg 2x" alt="Владимир Иваныч">
             </picture>
-            <h3 class="works__name">Владимир Иваныч</h3>
-            <blockquote class="works__about-customers">К зимнему сезону - готов!</blockquote>
-            <ul class="works__block-servises">
-              <li class="works__servis works__servis--beard">Борода</li>
-              <li class="works__servis works__servis--mustache">Усы</li>
-            </ul>
+            <div class="works__info">
+              <h3 class="works__name">Владимир Иваныч</h3>
+              <blockquote class="works__about-customers">К зимнему сезону - готов!</blockquote>
+              <ul class="works__block-servises">
+                <li class="works__servis works__servis--beard">Борода</li>
+                <li class="works__servis works__servis--mustache">Усы</li>
+              </ul>
+            </div>
           </article>
           <article class="works__item">
             <picture>
@@ -158,60 +164,63 @@
               <img class="works__image" src="img/content/photo-4-mobile.jpg"
                 srcset="img/content/photo-4-mobile@2x.jpg 2x" alt="Винстон Синий">
             </picture>
-            <h3 class="works__name">Винстон Синий</h3>
-            <blockquote class="works__about-customers">Как только заростаю и волосы начинают мешать видеть - бегом в Бородинский!</blockquote>
-            <ul class="works__block-servises">
-              <li class="works__servis works__servis--haircut">Стрижка</li>
-            </ul>
+            <div class="works__info">
+              <h3 class="works__name">Винстон Синий</h3>
+              <blockquote class="works__about-customers">Как только заростаю и волосы начинают мешать видеть - бегом в Бородинский!</blockquote>
+              <ul class="works__block-servises">
+                <li class="works__servis works__servis--haircut">Стрижка</li>
+              </ul>
+            </div>
           </article>
         </div>
        </div>
      </section>
 
      <section class="price">
-       <h2 class="price__title">Прейскурант</h2>
-       <table class="price__table price__table--small">
-         <tr>
-           <td class="table__item table__item--large">1</td>
-           <td class="table__item table__service">Классическая стрижка<br><span class="table__subitem">(с мытьём головы)</span></td>
-           <td class="table__item table__item--large">с мытьём головы</td>
-           <td class="table__item table__item--small">1 500 руб.</td>
-         </tr>
-         <tr>
-           <td class="table__item table__item--large">2</td>
-           <td class="table__item table__service">Современный вариант<br><span class="table__subitem">(с мытьём головы)</span></td>
-           <td class="table__item table__item--large">с мытьём головы</td>
-           <td class="table__item table__item--small">1 500 руб.</td>
-         </tr>
-         <tr>
-           <td class="table__item table__item--large">3</td>
-           <td class="table__item table__service">Индивидуальный подход<br><span class="table__subitem">(с мытьём головы)</span></td>
-           <td class="table__item table__item--large">с мытьём головы</td>
-           <td class="table__item table__item--small">2 000 руб.</td>
-         </tr>
-         <tr>
-           <td class="table__item table__item--large">4</td>
-           <td class="table__item table__service">Бритьё головы<br><span class="table__subitem">(без мытья)</span></td>
-           <td class="table__item table__item--large">без мытья</td>
-           <td class="table__item table__item--small">500 руб.</td>
-         </tr>
-         <tr>
-           <td class="table__item table__item--large">5</td>
-           <td class="table__item table__service">Бритьё головы<br><span class="table__subitem">(с мытьём головы)</span>
-           </td>
-           <td class="table__item table__item--large">с мытьём головы</td>
-           <td class="table__item table__item--small">1 000 руб.</td>
-         </tr>
-       </table>
-       <div class="price__discount price__discount--large">
-         <img class="discount__image discount__image--large" src="" alt="с 10:00 до 14:00">
-         <p class="discount__text discount__text--medium">С 10:00 до 14:00 скидка 20%</p>
-       </div>
+      <div class="price__wrapper">
+        <h2 class="price__title">Прейскурант</h2>
+        <table class="price__table">
+          <tr>
+            <td class="table__item table__item--number">1</td>
+            <td class="table__item table__item--left table__service">Классическая стрижка<br><span class="table__subitem">(с мытьём головы)</span></td>
+            <td class="table__item table__item--large">с мытьём головы</td>
+            <td class="table__item table__item--right table__item--small">1 500 руб.</td>
+          </tr>
+          <tr>
+            <td class="table__item table__item--number">2</td>
+            <td class="table__item table__item--left table__service">Современный вариант<br><span class="table__subitem">(с мытьём головы)</span></td>
+            <td class="table__item table__item--large">с мытьём головы</td>
+            <td class="table__item table__item--right table__item--small">1 500 руб.</td>
+          </tr>
+          <tr>
+            <td class="table__item table__item--number">3</td>
+            <td class="table__item table__item--left table__service">Индивидуальный подход<br><span class="table__subitem">(с мытьём головы)</span></td>
+            <td class="table__item table__item--large">с мытьём головы</td>
+            <td class="table__item table__item--right table__item--small">2 000 руб.</td>
+          </tr>
+          <tr>
+            <td class="table__item table__item--number">4</td>
+            <td class="table__item table__item--left table__service">Бритьё головы<br><span class="table__subitem">(без мытья)</span></td>
+            <td class="table__item table__item--large">без мытья</td>
+            <td class="table__item table__item--right table__item--small">500 руб.</td>
+          </tr>
+          <tr>
+            <td class="table__item table__item--number">5</td>
+            <td class="table__item table__item--left table__service">Бритьё головы<br><span class="table__subitem">(с мытьём головы)</span>
+            </td>
+            <td class="table__item table__item--large">с мытьём головы</td>
+            <td class="table__item table__item--right table__item--small">1 000 руб.</td>
+          </tr>
+        </table>
+        <div class="price__discount">
+          <p class="discount__text">С 10:00 до 14:00 скидка 20%</p>
+        </div>
+      </div><!--end price__wrapper-->
      </section>
    </div> <!--end photo__wrapper-->
  </main>
 
-<footer class="page-footer footer">
+<footer class="page-footer footer page-footer--photo">
   <div class="footer__wrapper">
     <div class="footer__contacts contacts">
       <b class="contacts__title">Барбершоп «Бородинский»</b>

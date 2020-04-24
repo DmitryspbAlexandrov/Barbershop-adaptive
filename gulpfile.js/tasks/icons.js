@@ -16,16 +16,16 @@ const isProd = !!process.env.NODE_ENV;
 // Сборка SVG спрайта
 task('icons', function () {
   let pluginsSvgo = [{
-      removeViewBox: false
-    },
-    {
-      removeTitle: true
-    },
-    {
-      cleanupNumericValues: {
-        floatPrecision: 1
-      }
+    removeViewBox: false
+  },
+  {
+    removeTitle: true
+  },
+  {
+    cleanupNumericValues: {
+      floatPrecision: 1
     }
+  }
   ];
 
   let pluginsImagemin = [imagemin.svgo({

@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 35px;
 
-  &::after {
+  &::before {
     content: '';
     position: absolute;
     top: 0;
@@ -11,6 +11,13 @@
     margin: 0 auto;
     clip-path: polygon(50% 35px, 0 0, 100% 0);
     background-color: $reviews-bg__color;
+  }
+}
+
+.page-footer--photo {
+
+  &::before {
+    background-color: $advantages-bg__color;
   }
 }
 
@@ -49,6 +56,13 @@
     padding: 0 120px;
     flex-wrap: nowrap;
     justify-content: flex-start;
+  }
+
+  .page-footer--photo {
+
+    &::before {
+      display: none;
+    }
   }
 
 }
