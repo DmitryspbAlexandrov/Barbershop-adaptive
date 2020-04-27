@@ -306,4 +306,44 @@
     <!--end page-footer__wrapper-->
   </footer>
 
+  <section class="modal modal-login">
+    <h2 class="modal-heading">Личный кабинет</h2>
+    <p class="modal-description">Введите свой логин и пароль, чтобы войти</p>
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="modal-form--input">
+        <label class="visually-hidden" for="user-login">Логин</label>
+        <input class="modal-input--user" id="user-login" type="text" name="login" placeholder="Логин">
+      </p>
+      <p class="modal-form--input">
+        <label class="visually-hidden" for="user-password">Пароль</label>
+        <input class="modal-input--password" id="user-password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p class="modal-help modal-form--input">
+        <label class="modal-checkbox">
+          <input type="checkbox" name="remember" class="form__checkbox visually-hidden">
+          <span class="checkbox__button"></span>
+          Запомни меня
+        </label>
+        <a class="modal-help--link" href="#">Я забыл пароль!</a>
+      </p>
+      <div class="modal-button--wrapper">
+        <button class="button button-modal" type="submit"><span class="button-description--square">Войти</span><span class="button-description--cross">Войти в личный кабинет</span></button>
+        <button class="button button-modal button-modal--close" type="button button--close"><span class="button-description--square">Закрыть</span></button>
+      </div><!--end modal-button--wrapper-->
+    </form>
+  </section>
+
+  <section class="modal modal-success">
+    <b class="modal-log--success">Это успех!</b>
+    <p class="modal-description--success">Ваша заявка отправлена. </br>Ожидайте, мы свяжемся с вами как только будет
+      минутка.</p>
+    <button class="button button-pop-close" type="button">Закрыть окно</button>
+  </section>
+
+  <section class="modal modal-failure">
+    <b class="modal-log--failure">Неудача</b>
+    <p class="modal-description--failure">Что-то пошло не так. Проверьте выделенные красным поля формы.</p>
+    <button class="button" type="button">Ок</button>
+  </section>
+
 </body>

@@ -4,6 +4,7 @@
   min-width: 160px;
   height: 50px;
   padding: 0 70px;
+  margin: 0;
 
   font-size: 18px;
   line-height: 50px;
@@ -154,6 +155,28 @@
   background-color: #d5c9bd;
 }
 
+//modal button, popup buttons
+
+.button-modal {
+  min-width: 130px;
+  padding: 0;
+}
+
+.button-description--cross {
+  display: none;
+}
+
+.button-modal--close {
+  color: #000000;
+  background-color: #f8f5f2;
+  border: 1px solid #816550;
+}
+
+.button-pop-close {
+  width: 160px;
+  padding: 0;
+}
+
 @media (min-width: $tablet-width) {
 
   .button--to-main {
@@ -171,4 +194,55 @@
   .radio__name {
     padding-bottom: 35px;
   }
+
+  .button-modal {
+    width: 320px;
+  }
+
+  .button-modal--close {
+    position: absolute;
+    top: 0px;
+    right: -70px;
+    min-width: 26px;
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    border: none;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 35px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      top: 13px;
+      left: -5px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 13px;
+      left: -5px;
+      transform: rotate(-45deg);
+    }
+
+  }
+
+  .button-description--square {
+    display: none;
+  }
+
+  .button-description--cross {
+    display: block;
+  }
+
+  .button-pop-close {
+    width: 320px;
+  }
+
 }
