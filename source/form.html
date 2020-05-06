@@ -80,7 +80,7 @@
           alt="Барбершоп «Бородинский»">
       </picture>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -122,7 +122,6 @@
         <h1 class="form__title">Записаться на стрижку</h1>
         <a class="button button--to-main" href="index.html">На главную</a>
         <form class="form__sing-up" action="https://echo.htmlacademy.ru" method="post">
-          <!--ВСТАВИТЬ В FIELDSET ДОПОЛНИТЕЛЬНУЮ ОБЁРТКУ ДЛЯ РУАЛИЗАЦИИ АДАПТИВНОСТИ-->
           <fieldset class="form__section form__section-customer">
             <legend class="visually-hidden">Ваше имя</legend>
             <div class="customer__wrapper">
@@ -343,7 +342,9 @@
   <section class="modal modal-failure">
     <b class="modal-log--failure">Неудача</b>
     <p class="modal-description--failure">Что-то пошло не так. Проверьте выделенные красным поля формы.</p>
-    <button class="button" type="button">Ок</button>
+    <button class="button button-pop-close" type="button">Ок</button>
   </section>
+
+  <script src="js/index.min.js"></script>
 
 </body>
