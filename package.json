@@ -65,5 +65,13 @@
     "test": "npm run lintspaces && npm run stylelint && npm run eslint"
   },
   "author": "Dmitry Alexandrov <dmitryspbalexandrov@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitryspbAlexandrov/Barbershop-lvl2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DmitryspbAlexandrov/Barbershop-lvl2/issues"
+  },
+  "homepage": "https://github.com/DmitryspbAlexandrov/Barbershop-lvl2#readme"
 }

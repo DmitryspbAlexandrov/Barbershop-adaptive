@@ -14,7 +14,8 @@ module.exports = {
       images: {
         all: dirs.src + 'img/',
         icons: dirs.src + 'img/icons/',
-        content: dirs.src + 'img/content/'
+        content: dirs.src + 'img/content/',
+        background: dirs.src + 'img/backgounds'
       },
       fonts: dirs.src + 'fonts/'
     },

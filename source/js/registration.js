@@ -2,7 +2,7 @@
 
 var openReg = document.querySelector('.user-list__login');
 var popupLogin = document.querySelector('.modal-login');
-var loginReg = document.querySelector('[name=login');
+var loginReg = document.querySelector('[name=login]');
 var passwordReg = document.querySelector('[type=password]');
 var formReg = document.querySelector('.modal-form');
 var loginClose = document.querySelector('.button-modal--close');

@@ -32,7 +32,7 @@ task('icons', function () {
     plugins: pluginsSvgo
   })];
 
-  return src(`${settings.paths.src.images.icons}**/*.svg`)
+  return src(`${settings.paths.src.images.ico}**/*.svg`)
     .pipe(gulpIf(isProd, imagemin(pluginsImagemin)))
     .pipe(svgstore({
       inlineSvg: true
