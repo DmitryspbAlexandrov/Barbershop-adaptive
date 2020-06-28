@@ -16,23 +16,23 @@ const isProd = !!process.env.NODE_ENV;
 // Сборка SVG спрайта
 task('icons', function () {
   let pluginsSvgo = [{
-    removeViewBox: false
-  },
-  {
-    removeTitle: true
-  },
-  {
-    cleanupNumericValues: {
-      floatPrecision: 1
+      removeViewBox: false
+    },
+    {
+      removeTitle: true
+    },
+    {
+      cleanupNumericValues: {
+        floatPrecision: 1
+      }
     }
-  }
   ];
 
   let pluginsImagemin = [imagemin.svgo({
     plugins: pluginsSvgo
   })];
 
-  return src(`${settings.paths.src.images.ico}**/*.svg`)
+  return src(`${settings.paths.src.images.icons}**/*.svg`)
     .pipe(gulpIf(isProd, imagemin(pluginsImagemin)))
     .pipe(svgstore({
       inlineSvg: true
