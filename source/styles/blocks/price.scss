@@ -46,7 +46,7 @@
   padding: 0;
   margin: 0;
   border: 1px solid $discount-border__color;
-  background-image: url('../../img/ico/clock-mobile.svg');
+  background-image: url('../img/ico/clock-mobile.svg');
   background-repeat: no-repeat;
   background-size: 58px 58px;
   background-position: 20px 15px;
@@ -85,7 +85,7 @@
   .price__discount {
     width: 640px;
     height: 114px;
-    background-image: url('../../img/ico/clock-tablet.svg');
+    background-image: url('../img/ico/clock-tablet.svg');
     background-repeat: no-repeat;
     background-size: 72px 72px;
     background-position: 25px 20px;
@@ -109,42 +109,42 @@
     }
   }
 
-   .price__wrapper {
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: space-between;
-     width: 1200px;
-     padding: 75px 120px 85px;
-   }
+  .price__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 75px 120px 85px;
+  }
 
-   .price__title {
-     width: 100%;
-   }
+  .price__title {
+    width: 100%;
+  }
 
-   .price__table {
-     height: 275px;
-     margin-bottom: 0;
-   }
+  .price__table {
+    height: 275px;
+    margin-bottom: 0;
+  }
 
-   .price__discount {
-     width: 269px;
-     height: 275px;
-     background-image: url('../../img/ico/clock-desctop.svg');
-     background-repeat: no-repeat;
-     background-size: 142px 142px;
-     background-position: 65px 35px;
-   }
+  .price__discount {
+    width: 269px;
+    height: 275px;
+    background-image: url('../img/ico/clock-desctop.svg');
+    background-repeat: no-repeat;
+    background-size: 142px 142px;
+    background-position: 65px 35px;
+  }
 
-   .discount__text {
-     padding: 0;
-     padding-top: 200px;
-     padding-left: 70px;
-     padding-right: 70px;
-     font-size: 20px;
-     line-height: 27px;
-     font-weight: normal;
-     text-align: center;
-   }
+  .discount__text {
+    padding: 0;
+    padding-top: 200px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: normal;
+    text-align: center;
+  }
 
 }
