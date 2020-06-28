@@ -68,10 +68,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DmitryspbAlexandrov/Barbershop-lvl2.git"
+    "url": "git+https://github.com/DmitryspbAlexandrov/Barbershop-adaptive"
   },
   "bugs": {
-    "url": "https://github.com/DmitryspbAlexandrov/Barbershop-lvl2/issues"
+    "url": "https://github.com/DmitryspbAlexandrov/Barbershop-adaptive/issues"
   },
-  "homepage": "https://github.com/DmitryspbAlexandrov/Barbershop-lvl2#readme"
+  "homepage": "https://github.com/DmitryspbAlexandrov/Barbershop-adaptive#readme"
 }
